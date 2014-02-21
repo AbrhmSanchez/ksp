@@ -28,7 +28,7 @@ CelestialBody.fromJSON = (json) ->
   
   CelestialBody.Kerbol = Kerbol = new CelestialBody(1.9891e30, 696342000, 432000, null)
   CelestialBody.Mercury_Moho = Mercury_Moho = new CelestialBody(3.3022e23, 2439700, 5067031.68, new Orbit(Kerbol, 57909100000, 0.20563, 7.005, 48.331, 29.124, 3.051))
-  CelestialBody.Venus(Eve) = Venus_Eve = new CelestialBody(4.8676e24, 6051800, 20996798.4, new Orbit(Kerbol, 108208000000, 0.0067, 3.39458, 76.678, 55.186, 0.875), 5)
+  CelestialBody.Venus_Eve = Venus_Eve = new CelestialBody(4.8676e24, 6051800, 20996798.4, new Orbit(Kerbol, 108208000000, 0.0067, 3.39458, 76.678, 55.186, 0.875), 5)
   CelestialBody.Earth_Kerbin = Earth_Kerbin = new CelestialBody(5.97219e24, 6371000, 86164.0916, new Orbit(Kerbol, 149598261000, 0.01671123, 0, 348.73936, 114.20783, 6.24), 1)
   CelestialBody.Moon_Mun = Moon_Mun = new CelestialBody(7.34767309e22, 1737100, 2360584.6848, new Orbit(Earth_Kerbin, 384399000, 0.0549, 23.435, 0, 0, 1.7))
   CelestialBody.Mars_Duna = Mars_Duna = new CelestialBody(6.4185e23, 3396200, 88642.6848, new Orbit(Kerbol, 227939100000, 0.093315, 1.85, 49.562, 286.537, 0.338), 0.2)
