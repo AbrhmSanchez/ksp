@@ -551,7 +551,7 @@
         addPlanetGroup(name, referenceBodyGroup, referenceBodySelect, 1);
       }
     }
-    originSelect.val('Earth_Kerbin');
+    originSelect.val('Kerbin');
     if (originSelect.val() == null) {
       return originSelect.prop('selectedIndex', 0);
     }
@@ -815,7 +815,7 @@
       return updateAdvancedControls();
     });
     $('#originSelect').change();
-    $('#destinationSelect').val('Mars_Duna');
+    $('#destinationSelect').val('Duna');
     $('#destinationSelect').change();
     $('#noInsertionBurnCheckbox').change(function(event) {
       if (CelestialBody[$('#destinationSelect').val()].mass != null) {
@@ -867,9 +867,9 @@
     });
     $('#porkchopForm').bind('reset', function(event) {
       return setTimeout(function() {
-        $('#originSelect').val('Earth_Kerbin');
+        $('#originSelect').val('Kerbin');
         $('#originSelect').change();
-        $('#destinationSelect').val('Mars_Duna');
+        $('#destinationSelect').val('Duna');
         return $('#destinationSelect').change();
       }, 0);
     });
