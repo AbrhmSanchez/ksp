@@ -428,8 +428,8 @@ window.prepareOrigins = prepareOrigins = -> # Globalized so bodies can be added 
       addPlanetGroup(name, originGroup, originSelect, 2)
       addPlanetGroup(name, referenceBodyGroup, referenceBodySelect, 1)
   
-  # Select Kerbin as the default origin, or the first option if Kerbin is missing
-  originSelect.val('Kerbin')
+  # Select Earth_Kerbin as the default origin, or the first option if Kerbin is missing
+  originSelect.val('Earth_Kerbin')
   originSelect.prop('selectedIndex', 0) unless originSelect.val()?
 
 $(document).ready ->
@@ -632,7 +632,7 @@ $(document).ready ->
     updateAdvancedControls()
     
   $('#originSelect').change()
-  $('#destinationSelect').val('Duna')
+  $('#destinationSelect').val('Mars_Duna')
   $('#destinationSelect').change()
   
   $('#noInsertionBurnCheckbox').change (event) ->
@@ -674,9 +674,9 @@ $(document).ready ->
         
   $('#porkchopForm').bind 'reset', (event) ->
     setTimeout(-> 
-        $('#originSelect').val('Kerbin')
+        $('#originSelect').val('Earth_Kerbin')
         $('#originSelect').change()
-        $('#destinationSelect').val('Duna')
+        $('#destinationSelect').val('Mars_Duna')
         $('#destinationSelect').change()
       0)
   
